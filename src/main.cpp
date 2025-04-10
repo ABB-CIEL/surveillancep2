@@ -1,18 +1,18 @@
 #include <Arduino.h>
+#include <Wire.h>
+#include "SSD1306.h"
 
-// put function declarations here:
-int myFunction(int, int);
+SSD1306 ecranOled(0x3c, 5, 4);
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(115200);
+    ecranOled.init();
+    ecranOled.clear();
+    ecranOled.setFont(ArialMT_Plain_10); 
+    ecranOled.drawString(0, 0, "mugiwara booommmmmmm");
+ 
+    ecranOled.display();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
