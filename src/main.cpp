@@ -9,7 +9,7 @@ void setup() {
     ecranOled.init();
     ecranOled.clear();
     ecranOled.setFont(ArialMT_Plain_10); 
-    ecranOled.drawString(0, 0, "mugiwara booommmmmmm");
+    ecranOled.drawString(0, 0, "mugiwara boooom moyaaaaaaaaah moyah");
  
     ecranOled.display();
 }
